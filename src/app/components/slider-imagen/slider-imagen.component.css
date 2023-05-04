@@ -1,0 +1,46 @@
+mat-card-actions {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 70%;
+}
+
+mat-card-actions h3 {
+    margin: 0px;
+}
+
+.boton {
+    display: grid;
+    justify-items: end!important;
+    align-items: end!important;
+}
+
+.b-ico {
+    width: 36px;
+    height: 26px;
+    background-color: #FFF0D7;
+    color: #FCA311;
+    border-radius: 50%;
+    border: none;
+    align-self: flex-end;
+}
+
+.content {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.example-card img {
+    padding: 5px!important;
+    border: 4px solid black;
+    height: 20em;
+}
+
+.cuadro-card {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+mat-card-content h3 {
+    margin-top: 10px;
+}

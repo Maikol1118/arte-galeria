@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+.font1 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.owl-next,
+.owl-prev {
+    position: absolute;
+    color: rgb(68, 67, 67)!important;
+    background: none!important;
+    top: 50%;
+}
+
+.owl-next {
+    right: -40px;
+}
+
+.owl-prev {
+    left: -40px;
+}
+
+.owl-next .fa,
+.owl-prev .fa {
+    font-size: 40px;
+}

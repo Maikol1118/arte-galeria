@@ -1,0 +1,117 @@
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.imgslider {
+    display: grid;
+    grid-template-columns: 36% 64%;
+    height: 74vh;
+}
+
+::ng-deep .carousel-item img {
+    height: 74vh;
+    object-fit: fill!important;
+}
+
+.btn-warning {
+    align-self: start!important;
+    background-color: #FCA311!important;
+    font-size: 23px;
+    margin-top: 0.5em;
+}
+
+.textpresentacion {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 40% 30%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFF0D7A3;
+}
+
+.carousel-control-next-icon {
+    border-radius: 50%;
+    background-size: 45px;
+    background-image: url("../../../assets/iconos/download.svg");
+}
+
+.encabezado {
+    margin-bottom: 0.5em;
+    align-self: end!important;
+    font-size: 5em;
+}
+
+.textpresentacion h3 {
+    align-self: center!important;
+    font-size: 4em;
+    line-height: 1em;
+    color: #6C5E45;
+}
+
+.tittle-caruselimg {
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 20vh;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: 100%;
+}
+
+.tittle-caruselimg h1 {
+    font-size: 36px;
+    align-self: end!important;
+}
+
+.tittle-caruselimg p {
+    position: relative;
+    top: -30px;
+    font-size: 24px;
+    align-self: start!important;
+    justify-self: end!important;
+}
+
+.Acerca-autor {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 4%;
+    height: 66vh;
+}
+
+.text-contenido {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    text-justify: center;
+}
+
+.text-autor h1 {
+    margin-bottom: 5%;
+    font-size: 36px;
+}
+
+.text-autor {
+    margin: 4%;
+    margin-left: 6%;
+}
+
+hr {
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 92%;
+}
+
+.text-autor h3 {
+    margin-top: 5%;
+    text-align: end;
+    margin: 4%;
+    margin-left: 6%;
+}
+
+.Acerca-autor img {
+    height: 84%;
+    width: 92%;
+    margin-right: 6%;
+    margin-top: 6%;
+}

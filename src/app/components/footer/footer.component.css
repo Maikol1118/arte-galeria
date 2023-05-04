@@ -1,0 +1,115 @@
+footer {
+    height: 34vh;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: black;
+}
+
+.cont-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 1.5em;
+}
+
+.col {
+    text-align: center;
+}
+
+li {
+    margin-bottom: 0.5em;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    margin-left: 2%;
+}
+
+label {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 0.8em;
+    margin: 0px!important;
+}
+
+.col-2 {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+}
+
+.col-3 {
+    width: 100%;
+}
+
+.iconoslist {
+    display: grid;
+    grid-template-columns: repeat(3, 48px);
+}
+
+.iconoslist button {
+    background: none!important;
+    border: none!important;
+    ;
+}
+
+button a img {
+    background-color: none;
+    height: 48px;
+    width: 48px;
+}
+
+.col-3 label {
+    margin-left: 1.5em;
+}
+
+.input-group {
+    width: 50%;
+}
+
+.input-group input {
+    background-color: #FFFDFD94;
+    border: none!important;
+    outline: none!important;
+}
+
+.input-group input:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.input-group input::placeholder {
+    color: black;
+    font-weight: 1000;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.input-group .btn {
+    background-color: #FCA311;
+    color: black;
+    font-weight: 1000;
+}
+
+.row {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 1em;
+}
+
+.col {
+    text-align: end;
+    margin: 1em;
+}
+
+.col label {
+    height: 100%;
+    padding-top: 6px;
+}
+
+ul label {
+    margin-bottom: 1em!important;
+}

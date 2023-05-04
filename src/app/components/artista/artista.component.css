@@ -1,0 +1,47 @@
+.img-artista {
+    height: 94vh;
+    background-image: url("../../../assets/img/cafe-descafeinado-1636986332.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%!important;
+    grid-template-rows: 60% 20% 10% 10%!important;
+    grid-gap: 1em;
+}
+
+.encabezado {
+    color: black;
+    font-weight: bold;
+    font-size: 5em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.btn-warning {
+    width: 12em;
+    height: max-content;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 1em;
+    background-color: #FCA311!important;
+    font-size: 23px;
+    border: #FCA311;
+}
+
+.buton1 {
+    justify-self: end;
+}
+
+#infoartis {
+    height: 100vh;
+    background-color: blue;
+}
+
+#cuadrosartist {
+    height: 100vh;
+    background-color: brown;
+}

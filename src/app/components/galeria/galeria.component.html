@@ -1,0 +1,162 @@
+<div class="content">
+    <div class="slider">
+        <section class="example-section">
+            <span class="example-list-section">
+          <mat-checkbox class="example-margin"
+                        [checked]="allComplete"
+                        [color]="task.color"
+                        [indeterminate]="someComplete()"
+                        (change)="setAll($event.checked)">
+            {{task.name}}
+          </mat-checkbox>
+          <hr>
+        </span>
+            <span class="example-list-section">
+              <label class="font1 encabezado2">Medio Visual:</label>
+          <ul>
+            <li *ngFor="let subtask of task.subtasks">
+              <mat-checkbox [(ngModel)]="subtask.completed"
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                {{subtask.name}}
+              </mat-checkbox>
+            </li>
+          </ul>
+          <label class="font1 encabezado2">Técnicas:</label>
+          <ul>
+            <li *ngFor="let subtask of task.subtasks2">
+              <mat-checkbox [(ngModel)]="subtask.completed"
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                {{subtask.name}}
+              </mat-checkbox>
+            </li>
+          </ul>
+          <label class="font1 encabezado2">Categorias:</label>
+          <ul>
+            <li *ngFor="let subtask of task.subtasks3">
+              <mat-checkbox [(ngModel)]="subtask.completed"
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                {{subtask.name}}
+              </mat-checkbox>
+            </li>
+          </ul>
+          <label class="font1 encabezado2">Temas</label>
+          <ul>
+            <li *ngFor="let subtask of task.subtasks4">
+              <mat-checkbox [(ngModel)]="subtask.completed"
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                {{subtask.name}}
+              </mat-checkbox>
+            </li>
+          </ul>
+        </span>
+
+        </section>
+        <div class="precio">
+            <label class="encabezado">Precio:</label><br>
+            <div class="rango">
+                <div class="precio-min">
+                    <label>0</label>
+                </div>
+                <div class="precio-max">
+                    <label>10000</label>
+                </div>
+            </div>
+            <mat-slider min="0" max="10000" step="100" showTickMarks discrete [displayWith]="formatLabel2">
+                <input [(value)]=minprecio matSliderStartThumb>
+                <input [(value)]=maxprecio matSliderEndThumb>
+
+            </mat-slider><br>
+        </div>
+        <Label class="encabezado">Orientacion:</Label>
+        <div class="Orientacion">
+            <button type="button" ngbPopover="Orientacion Vertical" triggers="mouseenter:mouseleave">
+                <input type="radio" class="btn-check" name="options" id="Vertical" autocomplete="off" checked >
+                <label class="btn btn-secondary Vertical" for="Vertical"></label>
+      </button>
+            <button type="button" ngbPopover="Orientacion Horizontal" triggers="mouseenter:mouseleave">
+            <input type="radio" class="btn-check" name="options" id="Horizontal" autocomplete="off">
+            <label class="btn btn-secondary Horizontal" for="Horizontal"></label>
+            </button>
+            <button type="button" ngbPopover="Orientacion Cuadrada" triggers="mouseenter:mouseleave">
+
+            <input type="radio" class="btn-check" name="options" id="Cuadrado" autocomplete="off">
+            <label class="btn btn-secondary Cuadrado" for="Cuadrado"></label>
+          </button>
+        </div>
+        <Label class="encabezado">Tamano:</Label>
+        <div class="Tamano">
+
+            <button class="b-Pequeno" type="button" ngbPopover="Cuadros de 100x100" triggers="mouseenter:mouseleave">
+            <input type="radio" class="btn-check" name="tamano" id="Pequeno" autocomplete="off" checked >
+            <label class="btn btn-secondary Pequeno" for="Pequeno"></label>
+  </button>
+            <button class="b-Mediano" type="button" ngbPopover="Cuadros de 300x300" triggers="mouseenter:mouseleave">
+        <input type="radio" class="btn-check" name="tamano" id="Mediano" autocomplete="off">
+        <label class="btn btn-secondary Mediano" for="Mediano"></label>
+        </button>
+            <button class="b-Grande" type="button" ngbPopover="Cuadros de 500x500" triggers="mouseenter:mouseleave">
+
+        <input type="radio" class="btn-check" name="tamano" id="Grande" autocomplete="off">
+        <label class="btn btn-secondary Grande " for="Grande"></label>
+      </button>
+        </div>
+        <div class="Alto-slider">
+            <label for="customRange3" class="form-label encabezado">Alto:</label>
+            <div class="rango">
+                <div class="precio-min">
+                    <label>0</label>
+                </div>
+                <div class="precio-max">
+                    <label>400+</label>
+                </div>
+            </div>
+            <mat-slider min="0" max="400" showTickMarks discrete [displayWith]="formatLabel">
+                <input matSliderThumb>
+            </mat-slider>
+        </div>
+        <div class="Ancho-slider">
+
+            <label for="customRange3" class="form-label encabezado">Ancho:</label>
+            <div class="rango">
+                <div class="precio-min">
+                    <label>0</label>
+                </div>
+                <div class="precio-max">
+                    <label>400+</label>
+                </div>
+            </div>
+            <mat-slider min="0" max="400" showTickMarks discrete [displayWith]="formatLabel">
+                <input matSliderThumb>
+            </mat-slider>
+        </div>
+
+    </div>
+    <div class="galeria-img">
+        <div class="titulo"><label><strong>Descubre las obras que te cambiaran la vida</strong></label></div>
+        <div class="busqueda-menu"><label>Filtrado por:</label>
+            <div class="criterios"> </div>
+        </div>
+        <hr>
+        <div class="galeria">
+            <div *ngFor="let cuadro of listcuadros" class="cuadro-card">
+                <div class="example-card">
+
+                    <img mat-card-image src="{{cuadro.img}}" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <h3>{{cuadro.nombre}}<br> {{cuadro.fecha}}<br> {{cuadro.alto}}x{{cuadro.ancho}}
+                        </h3>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <h3>${{cuadro.precio}}</h3>
+                        <div class="boton">
+                            <button class="b-ico"><mat-icon class="i_search "  >favorite </mat-icon></button></div>
+                    </mat-card-actions>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
